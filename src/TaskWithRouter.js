@@ -50,7 +50,7 @@ class TaskWithRouter extends Component {
   ajouterTache(event){
     //  desactiver l evenement par defaut
     event.preventDefault();
-    
+
     const task={
       id: this.state.tasks.length + 1,
       describe: this.state.newTask,
@@ -80,9 +80,9 @@ class TaskWithRouter extends Component {
 
         <div>
            <Form>
-            <input type='text'  placeholder="Description tache" value= {this.state.newTask}  onChange={this.handleChange}/>
-             <Button color="danger" onClick={this.ajouterTache} >Ajouter Tache</Button>
-          </Form>
+              <input type='text'  placeholder="Description tache" value= {this.state.newTask}  onChange={this.handleChange} required />
+              <Button color="danger" onClick={this.ajouterTache} >Ajouter Tache</Button>
+           </Form>
 
           <ul>
              <li><a href={ROUTES.home} > HOME </a> </li>

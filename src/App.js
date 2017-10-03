@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
-import TaskApp from './TaskApp.js';
+//import TaskApp from './TaskApp.js';
+
+import TaskWithReactRouter from './TaskWithReactRouter.js';
 
 class App extends Component {
 
@@ -9,7 +11,8 @@ class App extends Component {
 
       <div className="App">
         <header className="App-header"/>
-          <TaskApp />
+          <TaskWithReactRouter/>
+
       </div>
     );
   }
